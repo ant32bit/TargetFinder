@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Target Finder</string>
+    <string name="go_desc">Go</string>
+    <string name="clear_desc">Clear</string>
+    <string name="cleared_instr">Fill in the letters in the target above</string>
+    <string name="went_instr">Click on a word, below, to look it up</string>
+    <string name="game_new_game">New Game</string>
+    <string name="game_solve_game">See Results</string>
+    <string name="game_input_hint">Enter your words here</string>
+    <string name="game_desc">Play game</string>
+    <string name="submit_desc">Submit word</string>
+    <string name="game_default_goals">Currently: 0  Pass: 0  Good: 0  Excellent: 0</string>
+    <string name="game_default_timer">0:00:00</string>
+    <string name="results_words_found_title">Words Found</string>
+    <string name="results_words_found_default">0 of 0 words found (100%)</string>
+    <string name="results_average_times">Average Times</string>
+    <string name="results_average_times_default_correct">0 seconds per word</string>
+    <string name="results_average_times_default_all">0 seconds per guess (includes incorrect guesses)</string>
+    <string name="results_words_accuracy_default">0 incorrect guesses (accuracy 1.00)</string>
+</resources>

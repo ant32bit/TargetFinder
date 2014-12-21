@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results_words_found_title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/results_text_words_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results_words_found_default" />
+
+    <TextView
+        android:id="@+id/results_text_words_accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results_words_accuracy_default" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/results_average_times"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/results_text_word_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results_average_times_default_correct" />
+
+    <TextView
+        android:id="@+id/results_text_guess_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results_average_times_default_all" />
+
+</LinearLayout>

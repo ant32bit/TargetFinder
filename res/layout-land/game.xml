@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.ant32bit.targetfinder.Timer
+                android:id="@+id/game_timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:text="@string/game_default_timer"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <com.ant32bit.targetfinder.TargetView
+                android:id="@+id/game_targetview"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/game_button_new_game"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/game_navigation_new"
+                    android:paddingLeft="20dp" />
+
+                <Button
+                    android:id="@+id/game_button_solve"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/game_navigation_solve"
+                    android:paddingLeft="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/game_text_goals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/game_default_goals" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+
+                <EditText
+                    android:id="@+id/game_input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="@string/game_input_hint"
+                    android:imeOptions="actionGo|flagNoExtractUi"
+                    android:singleLine="true" >
+
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/game_button_backspace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/submit_desc"
+                    android:src="@drawable/game_navigation_backspace" />
+
+                <ImageButton
+                    android:id="@+id/game_button_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/submit_desc"
+                    android:src="@drawable/game_navigation_submit" />
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/game_list_answers"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="false" >
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/game_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ant32bit.targetfinder"
+    android:versionCode="8"
+    android:versionName="1.1.3" >
+
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="14" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:icon="@drawable/targetfinder"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".TFLauncherActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Holo.Light"
+            android:configChanges="keyboardHidden|orientation|screenLayout" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TargetFinderActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenLayout" >
+            <intent-filter>
+                <action android:name="com.ant32bit.targetfinder.SOLVER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TargetGameActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.ant32bit.targetfinder.GAME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DefinitionActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.ant32bit.targetfinder.DEFINITION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameResultsActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.ant32bit.targetfinder.RESULTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
